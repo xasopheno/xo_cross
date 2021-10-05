@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "xo_cross",
+  "version": "1.0",
+  "description": "Remove the nyt crossword header so you can see.",
+  "icons": {
+    "48": "icons/xo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.nytimes.com/crosswords/game/*"
+      ],
+      "js": [
+        "xo.js"
+      ]
+    }
+  ]
+}
